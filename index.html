@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoNova — Driving the Future</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="AutoNova logo" class="logo">
+      <span class="brand-name">Autonova</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#buy">Where to Buy</a>
+    </nav>
+
+    <div class="header-actions">
+      <input id="globalSearch" class="search-input" placeholder="Search products or features..." />
+      <button id="loginBtn" class="btn-outline">Login</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero with logo banner -->
+    <section class="hero hero-banner">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img src="assets/images/logo.png" alt="AutoNova logo" class="hero-logo">
+        <h1>Driving the Future of Affordable ADAS Technology</h1>
+        <p>Enterprise-grade ADAS solutions made accessible for everyday cars.</p>
+        <div class="hero-ctas">
+          <a href="#products" class="btn">Explore Products</a>
+          <a href="#buy" class="btn btn-secondary">Check Launch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <h2>About Autonova</h2>
+        <p>Autonova was founded to bring advanced driver assistance systems (ADAS) to affordable vehicles. Our mission is to reduce accidents, improve driver confidence, and make smarter roads a reality.</p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2>Products & Features</h2>
+        <div class="search-row">
+          <input id="productSearch" placeholder="Search product features (e.g. Collision, Lane)" />
+        </div>
+        <div id="productGrid" class="product-grid">
+          <div class="product-card" data-name="Forward Collision Warning">
+            <h3>Forward Collision Warning</h3>
+            <p>Alerts driver to imminent front collisions.</p>
+          </div>
+          <div class="product-card" data-name="Automatic Emergency Braking">
+            <h3>Automatic Emergency Braking</h3>
+            <p>Applies brakes when a collision is imminent.</p>
+          </div>
+          <div class="product-card" data-name="Lane Departure Warning">
+            <h3>Lane Departure Warning</h3>
+            <p>Notifies driver when drifting out of lane.</p>
+          </div>
+          <div class="product-card" data-name="Lane Keeping Assist">
+            <h3>Lane Keeping Assist</h3>
+            <p>Helps to guide vehicle back to the lane.</p>
+          </div>
+          <div class="product-card" data-name="Blind Spot Detection">
+            <h3>Blind Spot Detection</h3>
+            <p>Warns about vehicles in blind spots.</p>
+          </div>
+          <div class="product-card" data-name="Adaptive Cruise Control">
+            <h3>Adaptive Cruise Control</h3>
+            <p>Maintains safe distance automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where to Buy -->
+    <section id="buy" class="section section-buy">
+      <div class="container">
+        <h2>Where to Buy</h2>
+        <p>Autonova product launch scheduled. Pre-orders and distribution details will be shared here.</p>
+        <div id="countdown" class="countdown">Loading...</div>
+        <p class="note">Sign up for launch updates at <a href="mailto:contact@autonova.com">contact@autonova.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/images/logo.png" alt="logo" class="logo-footer">
+        <p class="muted">Autonova — Safe driving for everyone</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@autonova.com">contact@autonova.com</a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p class="muted">Twitter · LinkedIn · YouTube</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Autonova. All rights reserved.</div>
+  </footer>
+
+  <!-- Login / Signup modal -->
+  <div id="authModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="authClose" title="Close">&times;</button>
+      <div class="auth-tabs">
+        <button class="tab active" data-tab="login">Login</button>
+        <button class="tab" data-tab="signup">Create Account</button>
+      </div>
+      <div class="auth-body">
+        <form id="loginForm" class="auth-form">
+          <label>Email</label>
+          <input type="email" id="loginEmail" required>
+          <label>Password</label>
+          <input type="password" id="loginPassword" required>
+          <button class="btn" type="submit">Login</button>
+          <p class="muted">Demo only: account stored locally in browser.</p>
+        </form>
+
+        <form id="signupForm" class="auth-form hidden">
+          <label>Full name</label>
+          <input type="text" id="signupName" required>
+          <label>Email</label>
+          <input type="email" id="signupEmail" required>
+          <label>Password</label>
+          <input type="password" id="signupPassword" required>
+          <button class="btn" type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
